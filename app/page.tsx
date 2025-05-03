@@ -1,4 +1,5 @@
 import Header from "@/components/shared/Header";
+import Hero from "@/components/shared/Hero";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -6,12 +7,12 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <header className="flex w-full items-center justify-between bg-gradient-to-tl from-white from-40% via-[#004FCE]/10 via-70% to-[#004FCE]/20 to-100% px-4 py-4 backdrop-blur-lg">
+      <header className="flex w-full items-center justify-between shadow fixed z-50 top-0 bg-gradient-to-tl from-white from-40% via-[#004FCE]/10 via-70% to-[#004FCE]/20 to-100% px-4 py-4 backdrop-blur-lg">
         <div className="w-10/12 mx-auto max-w-7xl">
           <nav className="flex items-center justify-between">
             <div className="flex items-center space-x-8">
               <div className="flex items-center space-x-1">
-                <Image src="/logo.svg" alt="Logo" width={20} height={20} />
+                <Image src="/ai-logo.png" alt="Logo" width={40} height={20} />
                 <h1 className="text-lg font-semibold">AI.SalesRank</h1>
               </div>
               <Header />
@@ -26,7 +27,7 @@ export default function Home() {
             {/* <MobileNav /> */}
           </nav>
 
-          {/* <Hero /> */}
+          <Hero />
         </div>
       </header>
       <main>
