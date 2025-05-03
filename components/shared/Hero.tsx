@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="py-10">
       <div className="flex flex-col items-center justify-between max-xl:gap-4 max-md:justify-center lg:flex-row">
         <div className="flex flex-col max-md:justify-center md:items-start">
-          <h2 className="text-4xl font-bold leading-16 text-[#111111] max-md:text-center xl:text-6xl xl:leading-24">
+          <h2 className="text-4xl font-bold leading-14 text-[#111111] max-md:text-center xl:text-6xl xl:leading-20">
             Your AI- <br /> Powered <br /> Sales Coach.
           </h2>
 
