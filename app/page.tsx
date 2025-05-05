@@ -1,4 +1,5 @@
 import FAQ from "@/components/shared/FAQ";
+import Feedback from "@/components/shared/Feedback";
 import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
 import Hero from "@/components/shared/Hero";
@@ -38,7 +39,7 @@ export default function Home() {
         {/* <LiveAICoach /> */}
         <OurCourses />
         <FAQ />
-        {/* <Feedback /> */}
+        <Feedback />
       </main>
       <Footer />
     </>

@@ -40,8 +40,12 @@ import {
               {/* Left site  */}
               <div className="flex flex-col md:w-[95%]">
                 <div className="flex items-center space-x-1">
-                  <Image src="/logo.svg" alt="Logo" width={20} height={20} />
-                  <h1 className="text-lg font-semibold">SalesRank.AI</h1>
+                  <Image 
+                  src="/ai-logo.png" 
+                  alt="Logo" 
+                  width={40} 
+                  height={20} />
+                  <h1 className="text-lg font-semibold">AI.SalesRank</h1>
                 </div>
                 <div>
                   <p className="py-4 text-sm text-[#335386]">
