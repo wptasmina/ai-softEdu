@@ -4,19 +4,21 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="py-10">
-      <div className="flex flex-col items-center justify-between max-xl:gap-4 max-md:justify-center lg:flex-row">
-        <div className="flex flex-col max-md:justify-center md:items-start">
+      <div className="grid grid-cols-2 gap-8">
+
+        {/* Hero text  */}
+        <div className="flex max-md:justify-center md:items-start border">
           <h2 className="text-4xl font-bold leading-14 text-[#111111] max-md:text-center xl:text-6xl xl:leading-20">
             Your AI- <br /> Powered <br /> Sales Coach.
           </h2>
 
-          <div className="m flex flex-col items-center gap-8 md:flex-row overflow-hidden">
+          <div className="mt-8 flex flex-col items-center gap-8 md:flex-row overflow-hidden">
             <Image
               src={"/hero-ai.svg"}
               alt="AI Coach"
               width={200}
               height={200}
-              className="mt-8 shadow"
+              className="mt-8"
             />
             <p className="mt-4 max-w-xs text-xl leading-relaxed text-[#05131D]/70">
               Get real-time coaching, script suggestions, and deal-closing
@@ -25,38 +27,57 @@ export default function Hero() {
           </div>
 
           <div className="mt-8 flex w-full flex-col items-center justify-between md:flex-row">
-            <div className="flex items-center gap-8">
+            {/* Banner icon-1  */}
+            <div className="flex items-center gap-6">
               <span className="rounded-md bg-white p-4 drop-shadow-xl">
-                <LayoutDashboard className="h-8 w-8 text-[#002868]" />
+                {/* <LayoutDashboard className="h-8 w-8 text-[#002868]" /> */}
+
+                <Image
+                  src={"/icon-1.png"}
+                  alt="icon"
+                  width={30}
+                  height={30}
+                  className=" rounded-md"
+                />
               </span>
               <div>
-                <h3 className="text-4xl font-semibold text-[#111111]">2000+</h3>
+                <h3 className="text-3xl font-semibold text-[#05131D]">2000+</h3>
                 <p className="text-lg text-[#05131D]/70">Your protection</p>
               </div>
             </div>
-
-            <div className="flex items-center gap-8">
+            {/* Banner icon-2  */}
+            <div className="flex items-center gap-6">
               <span className="rounded-md bg-white p-4 drop-shadow-xl">
-                <Pyramid className="h-8 w-8 text-[#002868]" />
+                <Image
+                  src={"/icon-2.png"}
+                  alt="icon"
+                  width={30}
+                  height={30}
+                  className=" rounded-md"
+                />
               </span>
               <div>
-                <h3 className="text-4xl font-semibold text-[#111111]">7001+</h3>
+                <h3 className="text-3xl font-semibold text-[#05131D]">7001+</h3>
                 <p className="text-lg text-[#05131D]/70">Provide tailored</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center md:relative">
+
+        {/* hero image  */}
+        <div className="flex justify-end md:relative border">
           <Image
             src={"/hero-ai2.svg"}
             alt="AI Coach"
-            width={500}
-            height={500}
+            width={400}
+            height={400}
+            className="top-0"
           />
-          <div className="-bottom-full max-w-sm rounded-xl bg-white p-8 drop-shadow-xl md:absolute md:-bottom-8 md:ml-8 lg:-left-0 lg:ml-0 xl:-left-32">
+
+          {/* <div className="-bottom-full w-70 rounded-xl bg-white py-8 px-6 drop-shadow-xl md:absolute md:-bottom-8 md:ml-8 lg:-left-0 lg:ml-0 xl:-left-32">
             <div className="flex items-center justify-between">
-              <h3 className="text-4xl font-semibold text-[#111111]">721+</h3>
-              <h3 className="text-4xl font-semibold text-[#111111]">1000+</h3>
+              <h3 className="text-4xl font-semibold text-[#00245F]">721+</h3>
+              <h3 className="text-4xl font-semibold text-[#00245F]">1000+</h3>
             </div>
             <div className="mt-4 space-y-4">
               <h3 className="text-xl font-semibold text-[#111111]">
@@ -67,8 +88,9 @@ export default function Hero() {
                 companies of all sizes optimize their operations
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
+
       </div>
     </section>
   );
