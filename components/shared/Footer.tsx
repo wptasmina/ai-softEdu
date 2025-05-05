@@ -14,7 +14,7 @@ import {
   export default function Footer() {
     return (
       <footer className="bg-gradient-to-bl from-white from-40% via-[#004FCE]/10 via-70% to-[#004FCE]/20 to-100%">
-        <div className="md:w-10/12 w-11/12 mx-auto max-w-7xl ">
+        <div className="md:w-10/12 w-11/12 mx-auto">
           <div className="relative py-10">
             {/* Background image */}
             {/* <div className="absolute inset-0 bg-[url('/Background-Noise.png')] bg-cover bg-center opacity-40"></div> */}
@@ -54,10 +54,10 @@ import {
                   </p>
                 </div>
                 <div className="flex items-center gap-4">
-                  <Facebook className="rounded-full bg-blue-100 p-1 text-xl text-[#103570] shadow" />
-                  <Twitter className="rounded-full bg-blue-100 p-1 text-xl text-[#103570] shadow" />
-                  <Linkedin className="rounded-full bg-blue-100 p-1 text-xl text-[#103570] shadow" />
-                  <Instagram className="rounded-full bg-blue-100 p-1 text-xl text-[#103570] shadow" />
+                  <Facebook className="rounded-full bg-blue-100 w-10 h-10 p-2 text-xl text-[#103570] shadow" />
+                  <Twitter className="rounded-full bg-blue-100 w-10 h-10 p-2 text-xl text-[#103570] shadow" />
+                  <Linkedin className="rounded-full bg-blue-100 w-10 h-10 p-2 text-xl text-[#103570] shadow" />
+                  <Instagram className="rounded-full bg-blue-100 w-10 h-10 p-2 text-xl text-[#103570] shadow" />
                 </div>
               </div>
   
