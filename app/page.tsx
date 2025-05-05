@@ -1,3 +1,4 @@
+import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
 import Hero from "@/components/shared/Hero";
 import MobileNav from "@/components/shared/MobileNav";
@@ -38,7 +39,7 @@ export default function Home() {
         {/* <FAQ /> */}
         {/* <Feedback /> */}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
