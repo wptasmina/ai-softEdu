@@ -16,7 +16,7 @@ type CardProps = React.ComponentProps<typeof Card>;
 export default function OurCourses({ className, ...props }: CardProps) {
   return (
     <section className="bg-[#fafafa]">
-      <div className="w-10/12 mx-auto max-w-7xl py-6 max-lg:px-4">
+      <div className="md:w-10/12 w-11/12 mx-auto">
         <div className="flex flex-col items-center justify-between gap-3 md:flex-row">
           <div>
             <h1 className="my-4 text-5xl font-semibold text-[#262626]">
