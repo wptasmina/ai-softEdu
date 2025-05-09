@@ -7,12 +7,12 @@ export default function Hero() {
       <div className="grid md:grid-cols-2 grid-cols-1  gap-8">
 
         {/* Hero text  */}
-        <div className="flex flex-col border">
+        <div>
           <h2 className="text-4xl font-bold leading-14 text-[#111111] max-md:text-center xl:text-6xl xl:leading-20">
             Your AI- <br /> Powered <br /> Sales Coach.
           </h2>
 
-          <div className="mt-8 flex flex-col items-center gap-6 md:flex-row overflow-hidden">
+          <div className="mt-6 flex flex-col items-center gap-6 md:flex-row overflow-hidden">
             <Image
               src={"/hero-ai.svg"}
               alt="AI Coach"
@@ -26,7 +26,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="mt-8 flex w-full flex-col gap-6 items-center justify-between md:flex-row">
+          <div className="md:mt-14 mt-10  w-full flex items-center justify-between md:flex-row flex-col gap-6 bottom-0">
             {/* lift-side Banner icon-1  */}
             <div className="flex items-center gap-6">
               <span className="rounded-md bg-white p-4 drop-shadow-xl">
@@ -64,18 +64,18 @@ export default function Hero() {
         </div>
 
         {/* right-site hero image  */}
-        <div className="relative border">
-          <div className="absolute top-0 right-0">
+        <div className="relative">
+          <div className="absolute top-0 right-0 ">
             <Image
               src="/hero-ai2.svg"
               alt="AI Coach"
-              width={400}
-              height={400}
+              width={500}
+              height={500}
             />
           </div>
         
-
-        {/* <div className="-bottom-full w-70 rounded-xl bg-white py-8 px-6 drop-shadow-xl md:absolute md:-bottom-8 md:ml-8 lg:-left-0 lg:ml-0 xl:-left-32">
+           {/* right-site TEXT  */}
+        <div className="-bottom-full md:w-80 w-full rounded-xl bg-white py-9 px-6 drop-shadow-xl md:mt-[60%] ">
             <div className="flex items-center justify-between">
               <h3 className="text-4xl font-semibold text-[#00245F]">721+</h3>
               <h3 className="text-4xl font-semibold text-[#00245F]">1000+</h3>
@@ -89,7 +89,7 @@ export default function Hero() {
                 companies of all sizes optimize their operations
               </p>
             </div>
-          </div> */}
+          </div>
 
         </div>
 
