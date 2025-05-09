@@ -1,5 +1,9 @@
-import { LayoutDashboard, Pyramid } from "lucide-react";
-import Image from "next/image";
+'use client'
+
+import { motion } from 'framer-motion'
+import Image from 'next/image'
+const MotionImage = motion(Image);
+
 
 export default function Hero() {
   return (
@@ -8,13 +12,27 @@ export default function Hero() {
 
         {/* Hero text  */}
         <div>
-          <h2 className="text-4xl font-bold leading-14 text-[#111111] max-md:text-center xl:text-6xl xl:leading-20">
+          <motion.h2 
+           animate={{ y: [50, 0] }}
+           transition={{
+             duration: 1,
+             ease: "easeInOut",
+           }} 
+           className="text-4xl font-bold leading-14 text-[#111111] max-md:text-center xl:text-6xl xl:leading-20">
             Your AI- <br /> Powered <br /> Sales Coach.
-          </h2>
+          </motion.h2>
 
           <div className="flex flex-col items-center gap-6 md:flex-row overflow-hidden">
-            <Image
-              src={"/hero-ai.svg"}
+            <MotionImage
+              animate={{ y: [0, 100, 0] }}
+              transition={{
+                duration: 10,
+                ease: "easeInOut",
+                times: [0, 0.2, 0.5, 0.8, 1],
+                repeat: Infinity,
+                repeatDelay: 1,
+              }}
+              src="/hero-ai.svg"
               alt="AI Coach"
               width={200}
               height={200}
@@ -66,16 +84,33 @@ export default function Hero() {
         {/* right-site hero image  */}
         <div className="relative">
           <div className="absolute top-0 right-0 ">
-            <Image
+          <MotionImage
+              animate={{ y: [0, 50, 0] }}
+              transition={{
+                duration: 10,
+                ease: "easeInOut",
+                times: [0, 0.2, 0.5, 0.8, 1],
+                repeat: Infinity,
+                repeatDelay: 1,
+              }}
               src="/hero-ai2.svg"
               alt="AI Coach"
               width={450}
               height={450}
             />
           </div>
-        
-           {/* right-site TEXT  */}
-        <div className="md:mt-[50%] mt-[90%]  md:w-86 w-full rounded-xl bg-white py-14 px-6 drop-shadow-xl">
+
+          {/* right-site TEXT  */}
+          <motion.div 
+           animate={{ x: [0, 50, 0] }}
+           transition={{
+             duration: 10,
+             ease: "easeInOut",
+             times: [0, 0.2, 0.5, 0.8, 1],
+             repeat: Infinity,
+             repeatDelay: 1,
+           }}
+          className="md:mt-[50%] mt-[90%]  md:w-86 w-full rounded-xl bg-white py-14 px-6 drop-shadow-xl">
             <div className="flex items-center justify-between">
               <h3 className="text-4xl font-semibold text-[#00245F]">721+</h3>
               <h3 className="text-4xl font-semibold text-[#00245F]">1000+</h3>
@@ -89,7 +124,7 @@ export default function Hero() {
                 companies of all sizes optimize their operations
               </p>
             </div>
-          </div>
+          </motion.div>
 
         </div>
 
