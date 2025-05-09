@@ -12,7 +12,7 @@ export default function Hero() {
             Your AI- <br /> Powered <br /> Sales Coach.
           </h2>
 
-          <div className="mt-6 flex flex-col items-center gap-6 md:flex-row overflow-hidden">
+          <div className="flex flex-col items-center gap-6 md:flex-row overflow-hidden">
             <Image
               src={"/hero-ai.svg"}
               alt="AI Coach"
@@ -26,7 +26,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="md:mt-14 mt-10  w-full flex items-center justify-between md:flex-row flex-col gap-6 bottom-0">
+          <div className=" mt-10  w-full flex items-center justify-between md:flex-row flex-col gap-6 bottom-0">
             {/* lift-side Banner icon-1  */}
             <div className="flex items-center gap-6">
               <span className="rounded-md bg-white p-4 drop-shadow-xl">
@@ -69,19 +69,19 @@ export default function Hero() {
             <Image
               src="/hero-ai2.svg"
               alt="AI Coach"
-              width={500}
-              height={500}
+              width={450}
+              height={450}
             />
           </div>
         
            {/* right-site TEXT  */}
-        <div className="-bottom-full md:w-80 w-full rounded-xl bg-white py-9 px-6 drop-shadow-xl md:mt-[60%] ">
+        <div className="md:mt-[50%] mt-[90%]  md:w-86 w-full rounded-xl bg-white py-14 px-6 drop-shadow-xl">
             <div className="flex items-center justify-between">
               <h3 className="text-4xl font-semibold text-[#00245F]">721+</h3>
               <h3 className="text-4xl font-semibold text-[#00245F]">1000+</h3>
             </div>
             <div className="mt-4 space-y-4">
-              <h3 className="text-xl font-semibold text-[#111111]">
+              <h3 className="text-xl font-semibold text-[#05131D]">
                 Growth is our priority.
               </h3>
               <p className="text-lg text-[#05131D]/70">
