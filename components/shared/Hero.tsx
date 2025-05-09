@@ -38,10 +38,16 @@ export default function Hero() {
               height={200}
               className="mt-8"
             />
-            <p className="mt-4 max-w-xs text-xl leading-relaxed text-[#05131D]/70">
+            <motion.p 
+            animate={{ x: [50, 0] }}
+            transition={{
+              duration: 1,
+              ease: "easeInOut",
+            }} 
+            className="mt-4 max-w-xs text-xl leading-relaxed text-[#05131D]/70">
               Get real-time coaching, script suggestions, and deal-closing
               strategies powered by advanced AI technology.
-            </p>
+            </motion.p>
           </div>
 
           <div className=" mt-10  w-full flex items-center justify-between md:flex-row flex-col gap-6 bottom-0">
@@ -53,7 +59,7 @@ export default function Hero() {
                   alt="icon"
                   width={30}
                   height={30}
-                  className=" rounded-md"
+                  className="rounded-md transition-transform duration-300 hover:rotate-360"
                 />
               </span>
               <div>
@@ -69,7 +75,7 @@ export default function Hero() {
                   alt="icon"
                   width={30}
                   height={30}
-                  className=" rounded-md"
+                  className="rounded-md transition-transform duration-300 hover:rotate-180"
                 />
               </span>
               <div>
