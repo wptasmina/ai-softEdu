@@ -8,7 +8,7 @@ import {
 export default function FAQ() {
     return (
         <section className="my-8 bg-[F6F6F6] lg:my-15">
-            <div className="md:w-10/12 w-11-12 mx-auto py-6">
+            <div className="md:w-10/12 w-11/12 mx-auto py-6">
                 <h4 className="text-lg font-normal text-[#001C4A] max-md:mb-3 md:text-[24px]">
                     Frequently asked
                     <br />

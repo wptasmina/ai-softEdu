@@ -40,7 +40,7 @@ export default function Home() {
         {/* <LiveAICoach /> */}
         <OurCourses />
         <FAQ />
-        <Feedback />
+        {/* <Feedback /> */}
       </main>
       <Footer />
     </>

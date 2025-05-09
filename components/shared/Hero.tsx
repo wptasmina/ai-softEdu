@@ -4,15 +4,15 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="py-10">
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 grid-cols-1  gap-8">
 
         {/* Hero text  */}
-        <div className="flex max-md:justify-center md:items-start border">
+        <div className="flex flex-col border">
           <h2 className="text-4xl font-bold leading-14 text-[#111111] max-md:text-center xl:text-6xl xl:leading-20">
             Your AI- <br /> Powered <br /> Sales Coach.
           </h2>
 
-          <div className="mt-8 flex flex-col items-center gap-8 md:flex-row overflow-hidden">
+          <div className="mt-8 flex flex-col items-center gap-6 md:flex-row overflow-hidden">
             <Image
               src={"/hero-ai.svg"}
               alt="AI Coach"
@@ -26,12 +26,10 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="mt-8 flex w-full flex-col items-center justify-between md:flex-row">
-            {/* Banner icon-1  */}
+          <div className="mt-8 flex w-full flex-col gap-6 items-center justify-between md:flex-row">
+            {/* lift-side Banner icon-1  */}
             <div className="flex items-center gap-6">
               <span className="rounded-md bg-white p-4 drop-shadow-xl">
-                {/* <LayoutDashboard className="h-8 w-8 text-[#002868]" /> */}
-
                 <Image
                   src={"/icon-1.png"}
                   alt="icon"
@@ -45,7 +43,7 @@ export default function Hero() {
                 <p className="text-lg text-[#05131D]/70">Your protection</p>
               </div>
             </div>
-            {/* Banner icon-2  */}
+            {/* lift-side Banner icon-2  */}
             <div className="flex items-center gap-6">
               <span className="rounded-md bg-white p-4 drop-shadow-xl">
                 <Image
@@ -62,19 +60,22 @@ export default function Hero() {
               </div>
             </div>
           </div>
+
         </div>
 
-        {/* hero image  */}
-        <div className="flex justify-end md:relative border">
-          <Image
-            src={"/hero-ai2.svg"}
-            alt="AI Coach"
-            width={400}
-            height={400}
-            className="top-0"
-          />
+        {/* right-site hero image  */}
+        <div className="relative border">
+          <div className="absolute top-0 right-0">
+            <Image
+              src="/hero-ai2.svg"
+              alt="AI Coach"
+              width={400}
+              height={400}
+            />
+          </div>
+        
 
-          {/* <div className="-bottom-full w-70 rounded-xl bg-white py-8 px-6 drop-shadow-xl md:absolute md:-bottom-8 md:ml-8 lg:-left-0 lg:ml-0 xl:-left-32">
+        {/* <div className="-bottom-full w-70 rounded-xl bg-white py-8 px-6 drop-shadow-xl md:absolute md:-bottom-8 md:ml-8 lg:-left-0 lg:ml-0 xl:-left-32">
             <div className="flex items-center justify-between">
               <h3 className="text-4xl font-semibold text-[#00245F]">721+</h3>
               <h3 className="text-4xl font-semibold text-[#00245F]">1000+</h3>
@@ -89,6 +90,7 @@ export default function Hero() {
               </p>
             </div>
           </div> */}
+
         </div>
 
       </div>

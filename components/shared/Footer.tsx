@@ -66,7 +66,7 @@ import {
               </div>
   
               {/* Right site  */}
-              <div className="grid list-none grid-cols-2 gap-8 md:grid-cols-3">
+              <div className="grid list-none grid-cols-2 gap-8 sm:grid-cols-3">
                 <div>
                   <nav>
                     <h4 className="pb-4 text-xl font-semibold text-[#001C4A]">
