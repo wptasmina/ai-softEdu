@@ -7,11 +7,11 @@ export default function Analysis() {
       <h1 className="text-start text-2xl font-bold text-[#002868]">
         Real-time Analysis
       </h1>
-      <div className="mt-4 flex flex-col items-start justify-between space-y-4 rounded-lg bg-white p-4">
+      <div className="mt-4 flex flex-col items-start justify-between space-y-2 rounded-lg bg-white p-4">
         <span className="flex items-center gap-1">
           <CircleCheck className="h-6 w-6 text-white" fill="#06b217" />
           <span className="text-lg font-semibold text-[#002868]">
-            Confidence Level
+            Confidence Level 1
           </span>
         </span>
         <div className="flex w-full items-center justify-between gap-3">
