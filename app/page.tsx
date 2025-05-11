@@ -3,6 +3,7 @@ import Feedback from "@/components/shared/Feedback";
 import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
 import Hero from "@/components/shared/Hero";
+import LiveAICoach from "@/components/shared/LiveAICoach";
 import MobileNav from "@/components/shared/MobileNav";
 import OurCourses from "@/components/shared/OurCourses";
 import { Button } from "@/components/ui/button";
@@ -37,7 +38,7 @@ export default function Home() {
         </div>
       </header>
       <main>
-        {/* <LiveAICoach /> */}
+        <LiveAICoach />
         <OurCourses />
         <FAQ />
         {/* <Feedback /> */}
