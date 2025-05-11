@@ -44,7 +44,7 @@ export default function LiveAICoach() {
             {/* Scrollable container */}
             <div
               ref={chatContainerRef} // Assign the ref here
-              className="h-66 space-y-5 overflow-y-auto bg-[#f2f3f3] px-4 py-3"
+              className="h-80 space-y-4 overflow-y-auto bg-[#f2f3f3] px-4 py-3"
               style={{ scrollBehavior: "smooth" }} // Add smooth scrolling via CSS
             >
               <Message
