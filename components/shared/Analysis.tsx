@@ -3,7 +3,7 @@ import { Progress } from "../ui/progress";
 
 export default function Analysis() {
   return (
-    <div className="w-full rounded-lg bg-[#f2f3f3] p-8">
+    <div className="w-full rounded-lg bg-[#f2f3f3] p-6">
       <h1 className="text-start text-2xl font-bold text-[#002868]">
         Real-time Analysis
       </h1>
