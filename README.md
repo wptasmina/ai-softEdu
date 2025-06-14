@@ -3,8 +3,7 @@
 An innovative web application that leverages AI to enhance the learning experience. This platform integrates Google Gemini API and chat-based interactions to provide personalized educational support in real time.
 
 
-## 🧰 Tech Stack
-
+## 🧰 Tech Stack <br/>
 | Category          | Technologies Used                                                   |
 |------------------|----------------------------------------------------------------------|
 | Frontend         | React.js, Next.js, TypeScript, Tailwind CSS, Shadcn UI               |
@@ -14,8 +13,7 @@ An innovative web application that leverages AI to enhance the learning experien
 | Animations       | Framer Motion                                                        |
 
 
-## 🚀 Features
-
+## 🚀 Features <br/>
 | Feature                   | Description                                                                 |
 |---------------------------|-----------------------------------------------------------------------------|
 | 🤖 AI Tutoring            | Ask questions and get responses using Gemini API AI integration             |
