@@ -2,7 +2,6 @@
 
 An innovative web application that leverages AI to enhance the learning experience. This platform integrates Google Gemini API and chat-based interactions to provide personalized educational support in real time.
 
----
 
 ## 🧰 Tech Stack
 
@@ -14,7 +13,6 @@ An innovative web application that leverages AI to enhance the learning experien
 | Chat Features    | Google Chat Bot                                                      |
 | Animations       | Framer Motion                                                        |
 
----
 
 ## 🚀 Features
 
